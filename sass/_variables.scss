@@ -1,0 +1,67 @@
+// Kolory podstawowe
+$primary-color: #031033;
+$secondary-color: #3498db;
+$tertiary-color: #b5d8fe;
+$accent-color: #2ecc71;
+
+// Neutralne kolory
+$white: #ffffff;
+$black: #000000;
+$gray-light: #f4f4f4; // Jasne tło
+$gray-medium: #cccccc; // Obramowania
+$gray-dark: #666666; // Tekst drugorzędny
+
+// Kolory tła
+$background-light: #f9f9f9;
+$background-dark: #1a1a1a;
+
+// Kolory tekstu
+$text-primary: $primary-color; // Główny tekst
+$text-secondary: $gray-dark; // Podtytuły, mniej istotne informacje
+$text-inverted: $white; // Tekst na ciemnym tle
+
+// Stany interakcji
+$hover-color: darken($secondary-color, 10%);
+$active-color: lighten($accent-color, 10%);
+$disabled-color: $gray-medium;
+
+// Ostrzeżenia i informacje
+$error-color: #e63946;
+$warning-color: #ffb703;
+$success-color: #2ecc71;
+$info-color: #3498db;
+
+// Zmienne odstępów
+$spacing-scale: (
+  xs: 4px,
+  sm: 8px,
+  md: 16px,
+  lg: 32px,
+  xl: 48px,
+  xxl: 64px,
+);
+
+// Zmienne typografii
+$font-sizes: (
+  small: 12px,
+  base: 16px,
+  reading: 18px,
+  large: 24px,
+  xlarge: 32px,
+  xxlarge: 40px,
+);
+
+$font-weights: (
+  normal: 400,
+  medium: 500,
+  bold: 700,
+);
+
+$line-heights: (
+  tight: 1.2,
+  normal: 1.6,
+  loose: 1.8,
+);
+
+$font-sans: "Noto Sans", serif;
+$font-serif: "Merriweather", serif;

@@ -1,0 +1,17 @@
+.block-editor-block-preview__content-iframe .block-list-appender {
+  display: none;
+}
+
+.block-editor-block-preview__live-content * {
+  pointer-events: none;
+}
+.block-editor-block-preview__live-content .block-list-appender {
+  display: none;
+}
+.block-editor-block-preview__live-content .components-button:disabled {
+  opacity: initial;
+}
+.block-editor-block-preview__live-content .components-placeholder,
+.block-editor-block-preview__live-content .block-editor-block-list__block[data-empty=true] {
+  display: none;
+}/*# sourceMappingURL=content.css.map */

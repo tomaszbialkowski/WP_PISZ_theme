@@ -1,0 +1,1 @@
+{"version":3,"file":"index.css","mappings":";;;AAAA,gBAAgB;AAAhB;EACE;sCAAA;EAEA;EACA;EACA;AAEF,C","sources":["webpack://blocks/./src/editor.scss"],"sourcesContent":[".bold-paragraph {\n  /* Podczas edycji może mieć np. nieco inny styl, \n       żeby się wyróżniał w edytorze */\n  background-color: #f0f0f0;\n  padding: 8px;\n  font-weight: bold;\n}\n"],"names":[],"sourceRoot":""}

@@ -1,0 +1,18 @@
+footer {
+    background-color: #031033;
+    color: #fff;
+    padding-block: 32px;
+  
+    img {
+      display: block;
+      height: 32px;
+      width: auto;
+      margin-inline: auto;
+    }
+  
+    .menu {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+    }
+  }
