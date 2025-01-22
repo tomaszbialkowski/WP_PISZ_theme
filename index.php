@@ -1,6 +1,6 @@
 <?php get_header( );?>
 
-<h2 class="section-header">Publikacje</h1>
+<h2 class="section-header"><?php echo pll__('Publikacje', 'pisz')?></h1>
 <main class='post-cards__wrapper'>
     <?php
         while (have_posts(  )) {

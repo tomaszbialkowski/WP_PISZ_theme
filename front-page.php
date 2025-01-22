@@ -16,7 +16,7 @@ get_header( );?>
         ),
     ));
     
-    echo '<h2 class="section-header">Wyróżnione</h2><section class="post-cards__wrapper">';
+    echo '<h2 class="section-header">'. pll__( 'Wyróżnione' ) .'</h2><section class="post-cards__wrapper">';
     while ($featuredPosts->have_posts()) {
         $featuredPosts->the_post();
         get_template_part('template-parts/post_card');
@@ -25,7 +25,7 @@ get_header( );?>
     wp_reset_postdata();
 ?>
 
-<h2 class="section-header">Najnowsze publikacje</h2>
+<h2 class="section-header"> <?php echo pll__( 'Najnowsze publikacje' ) ?></h2>
 <main class="post-cards__wrapper">
 <?php 
     $latestPosts = new WP_Query(array(
@@ -40,10 +40,10 @@ get_header( );?>
     };
     wp_reset_postdata();
     echo '</main>';
-    ?>
+?>
 
 
-<h2 class="section-header">Wydarzenia</h2>
+<h2 class="section-header"> <?php echo pll__( 'Wydarzenia' ) ?></h2>
 <section class="post-cards__wrapper">
 <?php $events = new WP_Query(array(
     'post_type' => 'wydarzenia',

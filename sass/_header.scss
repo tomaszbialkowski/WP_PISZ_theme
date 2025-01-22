@@ -36,6 +36,16 @@ header {
         }
       }
     }
+    .language-switcher {
+      select {
+        background-color: $primary-color;
+        outline: none;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: map-get($font-sizes, base);
+      }
+    }
   }
 }
 

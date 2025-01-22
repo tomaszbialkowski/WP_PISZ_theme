@@ -1,8 +1,14 @@
+<?php
+/*
+Template Name: Szablon dla Analityków
+*/
+?>
+
 <?php 
 get_header( );?>
 
 
-<h2 class="section-header">Analitycy</h2>
+<h2 class="section-header"><?php echo pll__('Analitycy')?></h2>
 <?php
 $osoby = new WP_Query(array(
     'post_type' => 'osoby',

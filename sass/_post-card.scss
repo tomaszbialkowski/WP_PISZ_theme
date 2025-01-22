@@ -44,7 +44,7 @@
       }
 
       .post-card__title {
-        font-size: map-get($font-sizes, large);
+        font-size: map-get($font-sizes, medium);
         font-family: "Merriweather", serif;
         line-height: 1.2em;
         max-height: 6em;
@@ -52,7 +52,7 @@
         margin-bottom: 10px;
         position: relative;
         text-wrap: balance;
-        font-weight: 400;
+        font-weight: 600;
         letter-spacing: -0.5px;
         margin-top: 10px;
       }

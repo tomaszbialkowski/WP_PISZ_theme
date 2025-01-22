@@ -1,8 +1,14 @@
+<?php
+/*
+Template Name: Szablon dla wydarzeń
+*/
+?>
+
 <?php 
 get_header( );?>
 
 
-<h2 class="section-header">Nadchodzące wydarzenia</h2>
+<h2 class="section-header"><?= pll__('Nadchodzące wydarzenia', 'pisz')?></h2>
 <?php
     $wydarzenia = new WP_Query(array(
         'post_type' => 'wydarzenia'

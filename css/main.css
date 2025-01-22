@@ -33,6 +33,14 @@ header .header_container .header_menu_wrapper ul {
 header .header_container .header_menu_wrapper ul li {
   text-transform: uppercase;
 }
+header .header_container .language-switcher select {
+  background-color: #031033;
+  outline: none;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+}
 
 .current_page_item,
 .current-menu-item {
@@ -97,7 +105,7 @@ footer .menu {
   font-size: 16px;
 }
 .post-cards__wrapper .post-card .post-card__header .post-card__title {
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Merriweather", serif;
   line-height: 1.2em;
   max-height: 6em;
@@ -105,7 +113,7 @@ footer .menu {
   margin-bottom: 10px;
   position: relative;
   text-wrap: balance;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: -0.5px;
   margin-top: 10px;
 }
@@ -201,7 +209,7 @@ body a:hover {
 }
 
 .section-header {
-  padding-left: 32px;
+  padding: 0 0 8px 32px;
 }
 
 .pagination {

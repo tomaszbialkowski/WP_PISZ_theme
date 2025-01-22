@@ -1,12 +1,14 @@
-.block-editor-block-preview__content-iframe .block-list-appender {
-  display: none;
-}
-
-.block-editor-block-preview__live-content * {
-  pointer-events: none;
-}
-.block-editor-block-preview__live-content .block-list-appender {
-  display: none;
+.block-editor-plain-text {
+  box-shadow: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}/*# sourceMappingURL=content.css.map */: none;
 }
 .block-editor-block-preview__live-content .components-button:disabled {
   opacity: initial;

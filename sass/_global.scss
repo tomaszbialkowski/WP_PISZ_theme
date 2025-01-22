@@ -35,5 +35,5 @@ body {
 }
 
 .section-header {
-  padding-left: 32px;
+  padding: 0 0 map-get($spacing-scale, sm) map-get($spacing-scale, lg);
 }

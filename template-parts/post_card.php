@@ -3,7 +3,7 @@
         <span class="post-card__category">
             <?php
                 if (get_post_type() == "wydarzenia") {
-                    echo '<a href="' . get_post_type_archive_link("wydarzenia") . '">' . get_post_type() . '</a>';
+                    echo '<a href="' . get_post_type_archive_link("wydarzenia") . '">' . pll__('Wydarzenia') . '</a>';
                     echo '</span>';
                 } else {
                     the_category(', ');

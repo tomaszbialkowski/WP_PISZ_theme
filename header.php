@@ -18,6 +18,16 @@
                     ) )?>
                 </nav>
             </div>
+            <div class="language-switcher">
+                <?php if ( function_exists( 'pll_the_languages' ) ) : ?>
+                    <?php pll_the_languages( array(
+                        'dropdown' => 1,
+                        'show_names' => 1,
+                        'display_names_as' => 'slug',
+                        'hide_if_no_translation' => 1,
+                    ) ); ?>
+                <?php endif; ?>
+            </div>
         </div>
     </header>
     <div class="content-container">

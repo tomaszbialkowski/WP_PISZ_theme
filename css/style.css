@@ -1,6 +1,26 @@
-.bold-paragraph {
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-size: 24px !important;
-  padding-bottom: 16px;
+.block-editor-skip-to-selected-block {
+  position: absolute;
+  top: -9999em;
+}
+.block-editor-skip-to-selected-block:focus {
+  font-size: 14px;
+  font-weight: 600;
+  background: #f1f1f1;
+  z-index: z-index(".skip-to-selected-block");
+}/*# sourceMappingURL=style.css.map */ap */ute;
+  right: 0;
+}/*# sourceMappingURL=style.css.map */pointer-events: none;
+  z-index: z-index(".components-draggable__clone");
+}/*# sourceMappingURL=style.css.map */block-editor-block-preview__container .block-editor-block-preview__content .block-list-appender {
+  display: none;
+}
+
+.block-editor-block-preview__container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */
