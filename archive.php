@@ -12,7 +12,7 @@ get_template_part('/template-parts/pagination');
 ?>
 
 
+archive.php
 <?php
 get_footer( )
 ?>
-archive.php

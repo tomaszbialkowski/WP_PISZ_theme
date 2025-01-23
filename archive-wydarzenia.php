@@ -1,4 +1,3 @@
-archive-wydarzenia.php
 <?php 
 get_header( );?>
 
@@ -19,6 +18,6 @@ get_header( );?>
     echo '<section><h2>' . pll__('Minione wydarzenia', 'pisz') . '</h2></section>';
 
     get_template_part('/template-parts/pagination');
+    echo 'archive-wydarzenia.php';
     get_footer();
 ?>
-

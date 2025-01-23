@@ -1,6 +1,6 @@
 header {
   background-color: #031033;
-  color: red;
+  color: #fff;
   position: fixed;
   top: 0;
   z-index: 5;
@@ -182,8 +182,6 @@ body {
   padding: 0;
   font-family: "Noto Sans", serif;
   color: #031033;
-  margin-top: 92px;
-  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -203,7 +201,8 @@ body a:hover {
 }
 
 .content-container {
-  max-width: 1400px;
+  width: clamp(340px, 80%, 1400px);
+  margin-top: 92px;
   margin-inline: auto;
   flex: 1;
 }

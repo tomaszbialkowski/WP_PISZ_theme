@@ -28,9 +28,8 @@ while ($osoby->have_posts()) {;
 <?php
 };
 echo '</ul>';
+echo 'page-analitycy.php';
 
 get_template_part('/template-parts/pagination');
 get_footer();
 ?>
-
-page-analitycy.php
