@@ -14,12 +14,12 @@ $osoby = new WP_Query(array(
     'post_type' => 'osoby',
     'tax_query' => [
         [
-            'taxonomy' => 'rola', // Taksonomia
-            'field' => 'slug', // Wyszukiwanie według slugu
-            'terms' => 'analityk', // Slug kategorii
+            'taxonomy' => 'rola',
+            'field' => 'slug',
+            'terms' => 'analityk',
         ],
     ],
-    'posts_per_page' => -1, // Wszystkie osoby z kategorią Analityk
+    'posts_per_page' => -1,
 ));
 echo '<ul>';
 while ($osoby->have_posts()) {;

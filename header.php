@@ -9,7 +9,7 @@
     <header>
         <div class='header_container'>
             <div class='header_logo_wrapper'>
-            <a href="<?= site_url()?>"><img class='header_logo' src="<?php echo get_template_directory_uri() . "/images/PISZ_logo.png"?>" alt=""></a>
+            <a href="<?= pll_home_url();?>"><img class='header_logo' src="<?php echo get_template_directory_uri() . "/images/PISZ_logo.png"?>" alt=""></a>
             </div>
             <div class='header_menu_wrapper'>
                 <nav class='menu'>

@@ -138,17 +138,9 @@ if ( function_exists( 'pll_register_string' ) ) {
         'minione_wydarzenia',
         'Minione wydarzenia',
     );
-    pll_register_string('wydarzenia_slug', 'wydarzenia', 'CPT Slugs');
+    pll_register_string(
+        'wydarzenia',
+        'Wydarzenia',
+    );
 }
-error_log('Slug dla CPT: ' . pll__('wydarzenia'));
-
-add_filter('template_include', function ($template) {
-    if (is_post_type_archive('wydarzenia')) {
-        $custom_template = locate_template('archive-wydarzenia.php');
-        if ($custom_template) {
-            return $custom_template;
-        }
-    }
-    return $template;
-});
 ?>

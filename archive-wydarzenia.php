@@ -1,9 +1,4 @@
-<?php
-/*
-Template Name: Szablon dla wydarzeń
-*/
-?>
-
+archive-wydarzenia.php
 <?php 
 get_header( );?>
 
@@ -21,10 +16,9 @@ get_header( );?>
     };
 
     echo '<h2></main>';
-    echo '<section><h2>Minione wydarzenia</h2></section>';
+    echo '<section><h2>' . pll__('Minione wydarzenia', 'pisz') . '</h2></section>';
 
     get_template_part('/template-parts/pagination');
     get_footer();
 ?>
 
-archive-wydarzenia.php

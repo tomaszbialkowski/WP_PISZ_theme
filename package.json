@@ -1,0 +1,20 @@
+{
+  "name": "pisz-theme",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run build:blocks && npm run build:css",
+    "build:blocks": "wp-scripts build blocks/src/index.js --output-path=blocks/build",
+    "build:css": "sass sass/main.scss css/style.css --no-source-map",
+    "start": "concurrently \"npm run start:blocks\" \"npm run watch:css\"",
+    "start:blocks": "wp-scripts start blocks/src/index.js --output-path=blocks/build",
+    "watch:css": "sass --watch sass/main.scss:css/style.css"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^30.9.0",
+    "@wordpress/blocks": "^14.5.0",
+    "@wordpress/block-editor": "^14.11.0",
+    "@wordpress/element": "^6.16.0",
+    "sass": "^1.83.4",
+    "concurrently": "^7.6.0"
+  }
+}

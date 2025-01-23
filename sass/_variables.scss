@@ -1,3 +1,4 @@
+@use "sass:color";
 // Kolory podstawowe
 $primary-color: #031033;
 $secondary-color: #3498db;
@@ -21,8 +22,8 @@ $text-secondary: $gray-dark; // Podtytuły, mniej istotne informacje
 $text-inverted: $white; // Tekst na ciemnym tle
 
 // Stany interakcji
-$hover-color: darken($secondary-color, 10%);
-$active-color: lighten($accent-color, 10%);
+$hover-color: color.adjust($secondary-color, $lightness: -10%);
+$active-color: color.adjust($accent-color, $lightness: 10%);
 $disabled-color: $gray-medium;
 
 // Ostrzeżenia i informacje

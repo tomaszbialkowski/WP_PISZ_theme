@@ -1,11 +1,8 @@
 import { registerBlockType } from "@wordpress/blocks";
 import { RichText } from "@wordpress/block-editor";
 
-// Importujemy style edytora i frontu.
-// Najpierw style dla edytora:
 import "./editor.scss";
 
-// Następnie style frontowe:
 import "./style.scss";
 
 registerBlockType("pisztheme/bold-paragraph", {

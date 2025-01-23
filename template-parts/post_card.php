@@ -1,3 +1,8 @@
+<?php 
+    $lang = function_exists('pll_current_language') ? pll_current_language() : false;
+
+?>
+
 <div class="post-card">
     <div class="post-card__header">
         <span class="post-card__category">
@@ -7,8 +12,12 @@
                     echo '</span>';
                 } else {
                     the_category(', ');
-                    echo ' </span><span class="post-card__date">z dnia ' . get_the_date("j.m.Y") . '</span>';
+                    echo ' </span><span class="post-card__date">';  
+                    if ($lang === 'pl') echo ' z dnia ';
+                    if ($lang === 'en') echo ' of ';
+                    echo get_the_date("j.m.Y") . '</span>';
                 }
+
             ?>   
         <h3 class="post-card__title"><a href="<?php the_permalink( )?>"><?php the_title( )?></a></h3>
         <?php 

@@ -1,8 +1,9 @@
-@import "../../sass/variables";
+@use "sass:map";
+@use "../../sass/variables";
 
 .bold-paragraph {
-  font-family: $font-serif;
-  font-weight: map-get($font-weights, bold);
-  font-size: map-get($font-sizes, large) !important;
-  padding-bottom: map-get($spacing-scale, md);
+  font-family: variables.$font-serif;
+  font-weight: map.get(variables.$font-weights, bold);
+  font-size: map.get(variables.$font-sizes, large) !important;
+  padding-bottom: map.get(variables.$spacing-scale, md);
 }
