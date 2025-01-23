@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "base";
+
 .content-container {
   h1,
   h2,
@@ -8,19 +11,19 @@
   > p {
     font-weight: 600;
     margin-left: 3rem;
-    padding-top: map-get($spacing-scale, lg);
+    padding-top: map.get(base.$spacing-scale, lg);
   }
 }
 
 h2.post_title {
-  font-family: $font-serif;
-  font-size: map-get($font-sizes, xxlarge);
+  font-family: base.$font-serif;
+  font-size: map.get(base.$font-sizes, xxlarge);
   text-wrap: balance;
   max-width: 1200px;
   background-color: aliceblue;
   margin-left: 3rem;
-  margin-top: map-get($spacing-scale, sm);
-  margin-bottom: map-get($spacing-scale, lg);
+  margin-top: map.get(base.$spacing-scale, sm);
+  margin-bottom: map.get(base.$spacing-scale, lg);
 }
 
 .post_content {
@@ -29,21 +32,21 @@ h2.post_title {
   margin-left: 3rem;
 
   h2 {
-    font-family: $font-serif;
-    margin-block-start: map-get($spacing-scale, xl);
-    margin-bottom: map-get($spacing-scale, md);
-    font-size: map-get($font-sizes, large);
+    font-family: base.$font-serif;
+    margin-block-start: map.get(base.$spacing-scale, xl);
+    margin-bottom: map.get(base.$spacing-scale, md);
+    font-size: map.get(base.$font-sizes, large);
   }
 
   p {
-    line-height: map-get($line-heights, normal);
-    font-size: map-get($font-sizes, reading);
+    line-height: map.get(base.$line-heights, normal);
+    font-size: map.get(base.$font-sizes, reading);
     hyphens: auto;
   }
 
   > p:nth-child(n + 2):first-letter {
     float: left;
-    font-family: $font-serif;
+    font-family: base.$font-serif;
     font-size: 8.4em;
     font-style: normal;
     font-weight: 100;

@@ -1,6 +1,9 @@
+@use "sass:map";
+@use "base";
+
 header {
   background-color: #031033;
-  color: #fff;
+  color: red;
   position: fixed;
   top: 0;
   z-index: 5;
@@ -38,12 +41,12 @@ header {
     }
     .language-switcher {
       select {
-        background-color: $primary-color;
+        background-color: base.$primary-color;
         outline: none;
         border: none;
         color: white;
         text-transform: uppercase;
-        font-size: map-get($font-sizes, base);
+        font-size: map.get(base.$font-sizes, base);
       }
     }
   }
@@ -51,5 +54,5 @@ header {
 
 .current_page_item,
 .current-menu-item {
-  border-bottom: 2px solid $secondary-color;
+  border-bottom: 2px solid base.$secondary-color;
 }

@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "base";
+
 .post-cards__wrapper {
   margin-inline: auto;
   display: flex;
@@ -12,7 +15,7 @@
     height: 440px;
     border: solid 1px #21365b;
     background-color: #ffffff;
-    border-bottom: solid 3px $secondary-color;
+    border-bottom: solid 3px base.$secondary-color;
     position: relative;
     box-shadow: 0px 0px 16px 4px rgba(66, 68, 90, 0.1);
     border-radius: 4px;
@@ -24,26 +27,26 @@
 
       .post-card__category {
         text-transform: uppercase;
-        font-size: map-get($font-sizes, base);
+        font-size: map.get(base.$font-sizes, base);
       }
 
       .post_card__date {
         font-weight: 200;
-        font-size: map-get($font-sizes, base);
+        font-size: map.get(base.$font-sizes, base);
 
         .dashicons {
-          font-size: map-get($font-sizes, base);
+          font-size: map.get(base.$font-sizes, base);
           vertical-align: middle; // Wyrównanie ikony z tekstem
           margin-right: 0.5em; // Dodaj odstęp między ikoną a tekstem
         }
       }
 
       .post-card__author {
-        font-size: map-get($font-sizes, base);
+        font-size: map.get(base.$font-sizes, base);
       }
 
       .post-card__title {
-        font-size: map-get($font-sizes, medium);
+        font-size: map.get(base.$font-sizes, medium);
         font-family: "Merriweather", serif;
         line-height: 1.2em;
         max-height: 6em;

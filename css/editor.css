@@ -1,8 +1,0 @@
-@charset "UTF-8";
-.bold-paragraph {
-  /* Podczas edycji może mieć np. nieco inny styl, 
-       żeby się wyróżniał w edytorze */
-  background-color: #f0f0f0;
-  padding: 8px;
-  font-weight: bold;
-}/*# sourceMappingURL=editor.css.map */
