@@ -2,9 +2,7 @@
 /*
 Template Name: Szablon dla Analityków
 */
-?>
 
-<?php 
 get_header( );?>
 
 

@@ -38,7 +38,7 @@ header {
           text-transform: uppercase;
           position: relative;
 
-          &:not(.current-page-item)::after {
+          &::after {
             content: "";
             position: absolute;
             left: 50%;
@@ -46,29 +46,19 @@ header {
             width: 0;
             height: 3px;
             background-color: #007bff;
-            transition: all 0.3s ease-in-out;
+            transition: width 0.2s ease-in-out;
             transform: translateX(-50%);
           }
 
           &:hover::after {
-            width: 100%;
+            width: 110%;
           }
 
           &.current_page_item,
           &.current-menu-item,
           &.current_page_parent {
-            // border-bottom: 2px solid base.$secondary-color;
-
             &::after {
-              content: "";
-              position: absolute;
-              left: 50%;
-              bottom: -2xp;
-              width: 100%;
-              height: 3px;
-              background-color: #007bff;
-              transition: all 0.3s ease-in-out;
-              transform: translateX(-50%);
+              width: 110%;
             }
           }
         }
